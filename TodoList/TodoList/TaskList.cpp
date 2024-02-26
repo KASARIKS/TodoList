@@ -3,7 +3,7 @@
 namespace TaskList
 {
 	// Task methods
-	Task::Task(std::string text) : text(text), is_completed(0) {}
+	Task::Task(const std::string& text) : text(text), is_completed(0) {}
 
 	std::string Task::GetTask(void)
 	{
@@ -27,7 +27,7 @@ namespace TaskList
 	}
 
 	// List methods
-	List::List(std::string name) : name(name), tasks() {}
+	List::List(const std::string& name) : name(name), tasks() {}
 
 	tasks_structure& List::GetTasks(void)
 	{

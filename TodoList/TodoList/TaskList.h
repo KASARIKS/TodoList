@@ -1,6 +1,6 @@
 #pragma once
-#include <iostream>
-#include <vector>
+#include "StartLibraryPack.h"
+
 namespace TaskList
 {
 	class Task
@@ -8,7 +8,7 @@ namespace TaskList
 		std::string text;
 		bool is_completed;
 	public:
-		Task(std::string text);
+		Task(const std::string& text);
 
 		std::string GetTask(void);
 		friend std::ostream& operator<<(std::ostream& out, const Task& task);
@@ -24,7 +24,7 @@ namespace TaskList
 		std::string name;
 		tasks_structure tasks;
 	public:
-		List(std::string name);
+		List(const std::string& name);
 
 		tasks_structure& GetTasks(void);
 		std::string GetName(void);
