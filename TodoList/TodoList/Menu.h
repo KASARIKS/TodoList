@@ -17,8 +17,6 @@ namespace Menu
 		friend std::ostream& operator<<(std::ostream& out, const Option& option);
 	};
 
-	
-
 	typedef std::vector<Option> MenuOptions;
 	
 	class Menu

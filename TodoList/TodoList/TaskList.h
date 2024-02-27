@@ -29,6 +29,6 @@ namespace TaskList
 		tasks_structure& GetTasks(void);
 		std::string GetName(void);
 		List& AddTask(Task& task);
-		List& AddTask(std::string task_name);
+		List& AddTask(std::string task_text);
 	};
 }

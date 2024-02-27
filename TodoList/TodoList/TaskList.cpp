@@ -45,9 +45,9 @@ namespace TaskList
 		return *this;
 	}
 
-	List& List::AddTask(std::string task_name)
+	List& List::AddTask(std::string task_text)
 	{
-		tasks.push_back(Task(task_name));
+		tasks.push_back(Task(task_text));
 		return *this;
 	}
 }

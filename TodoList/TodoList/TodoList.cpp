@@ -1,9 +1,10 @@
 ﻿#include <iostream>
-#include "Menu.h"
+//#include "Menu.h"
+#include "ListFile.h"
 
 int main()
 {
-    using Menu::MenuOptions;
+    /*using Menu::MenuOptions;
     using Menu::Option;
     const std::string first("create todo-list");
     MenuOptions menu_options1 = { 
@@ -14,5 +15,16 @@ int main()
 
     Menu::Menu menu_1(menu_options1);
     menu_1.Show();
-    menu_1.SelectOption();
+    menu_1.SelectOption();*/
+    ListFile::ListFile list_file("test_list");
+    TaskList::List list(list_file.GetList());
+    
+    auto tasks = list.GetTasks();
+
+    for (auto it = tasks.begin(); it != tasks.end(); ++it)
+        std::cout << *it << std::endl;
+    
+    list.AddTask("Do my homework").AddTask("Clean my room");
+
+    list_file.SaveList(list);
 }
