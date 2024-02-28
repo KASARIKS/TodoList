@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ListFile.cpp" />
+    <ClCompile Include="ListManager.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="TaskList.cpp" />
     <ClCompile Include="TodoList.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ListFile.h" />
+    <ClInclude Include="ListManager.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="StartLibraryPack.h" />
     <ClInclude Include="TaskList.h" />
