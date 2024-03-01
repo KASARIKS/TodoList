@@ -8,7 +8,7 @@ namespace Menu
 	{
 		std::string name;
 		char indicator;
-		void (*action)(void);
+		void (*action)(void); // Нельзя передавать метод объекта по указателю, из-за чего метод бесполезен
 	public:
 		Option(const std::string& name, char indicator, void(*action)(void));
 		std::string GetOptionLine(void);

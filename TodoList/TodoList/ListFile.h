@@ -25,8 +25,10 @@ namespace ListFile
 		void WriteList(void);
 	public:
 		ListFile(std::string list_name);
+		ListFile(ListFile& list_file);
 		TaskList::List& GetList(void);
 		void SaveList(const TaskList::List& list);
 		void CreateList(void);
+		void SetName(std::string name);
 	};
 }

@@ -1,6 +1,8 @@
-﻿#include <iostream>
+﻿//#include <iostream>
 //#include "Menu.h"
-#include "ListFile.h"
+//#include "ListFile.h"
+//#include "ListManager.h"
+#include "AppAlgorithm.h"
 
 int main()
 {
@@ -28,4 +30,5 @@ int main()
     list.AddTask("Do my homework").AddTask("Clean my room");
 
     list_file.SaveList(list);*/
+    AppAlgorithm::AppAlgorithm();
 }

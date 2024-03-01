@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AppAlgorithm.cpp" />
     <ClCompile Include="ListFile.cpp" />
     <ClCompile Include="ListManager.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="TodoList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AppAlgorithm.h" />
     <ClInclude Include="ListFile.h" />
     <ClInclude Include="ListManager.h" />
     <ClInclude Include="Menu.h" />

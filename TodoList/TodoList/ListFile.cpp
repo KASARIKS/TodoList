@@ -69,6 +69,10 @@ namespace ListFile
 	{	
 	}
 
+	ListFile::ListFile(ListFile& list_file) : list(list_file.GetList())
+	{
+	}
+
 	TaskList::List& ListFile::GetList(void)
 	{
 		ReadList();
@@ -83,5 +87,9 @@ namespace ListFile
 	void ListFile::CreateList(void)
 	{
 		WriteList();
+	}
+	void ListFile::SetName(std::string name)
+	{
+		this->list.SetName(name);
 	}
 }

@@ -135,4 +135,8 @@ namespace TaskList
 		else
 			task_counter = 1;
 	}
+	void List::SetName(std::string name)
+	{
+		this->name = name;
+	}
 }
