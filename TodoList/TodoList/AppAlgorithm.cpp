@@ -1,6 +1,7 @@
 ﻿#include "AppAlgorithm.h"
 #include "ListManager.h"
 #include "Menu.h"
+#include <filesystem>
 
 namespace AppAlgorithm
 {
@@ -8,6 +9,7 @@ namespace AppAlgorithm
 	{
 		std::cout << "a. Create todo-list" << std::endl;
 		std::cout << "b. Open todo-list" << std::endl;
+		std::cout << "c. Show list of todo-lists" << std::endl;
 		std::cout << "q. Exit" << std::endl;
 	}
 
@@ -19,6 +21,13 @@ namespace AppAlgorithm
 		std::cout << "d. Delete task" << std::endl;
 		std::cout << "f. Show list" << std::endl;
 		std::cout << "q. Exit" << std::endl;
+	}
+
+	void ShowTodoLists(void)
+	{
+		std::cout << "All todo-lists: " << std::endl;
+		for (const auto& it : std::filesystem::directory_iterator(ListFile::folder_path))
+			std::cout << it.path() << std::endl;
 	}
 
 	void AppAlgorithm(void)
@@ -40,6 +49,9 @@ namespace AppAlgorithm
 			case 'b':
 				list_creator.OpenTodoList();
 				break;
+			case 'c':
+				ShowTodoLists();
+				continue;
 			case 'q':
 				std::cout << "All the best." << std::endl;
 				exit(1);

@@ -42,5 +42,6 @@ namespace TaskList
 		List& UnCompleteTask(int id);
 		void operator=(tasks_structure& tasks);
 		void SetName(std::string name);
+		void Clear(void);
 	};
 }

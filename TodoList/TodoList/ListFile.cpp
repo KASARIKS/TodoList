@@ -86,6 +86,7 @@ namespace ListFile
 	}
 	void ListFile::CreateList(void)
 	{
+		list.Clear();
 		WriteList();
 	}
 	void ListFile::SetName(std::string name)

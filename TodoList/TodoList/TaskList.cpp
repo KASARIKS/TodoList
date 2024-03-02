@@ -139,4 +139,9 @@ namespace TaskList
 	{
 		this->name = name;
 	}
+	void List::Clear(void)
+	{
+		tasks.clear();
+		task_counter = 1;
+	}
 }
