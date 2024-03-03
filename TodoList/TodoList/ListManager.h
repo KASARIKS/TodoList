@@ -4,8 +4,6 @@
 
 namespace ListManager
 {
-	//using Menu::Option;
-
 	int InputId(void);
 
 	class ListEditor
